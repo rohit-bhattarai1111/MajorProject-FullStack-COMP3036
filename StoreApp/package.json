@@ -1,5 +1,5 @@
 {
-  "name": "major-assignment",
+  "name": "StoreApp",
   "private": true,
   "scripts": {
     "build": "turbo run build",
