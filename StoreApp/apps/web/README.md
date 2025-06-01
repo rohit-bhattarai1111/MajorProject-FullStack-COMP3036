@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/create-next-app).
+# StoreApp - Modern E-commerce Frontend
+
+A modern e-commerce store frontend built with Next.js 14, Tailwind CSS, and TypeScript.
+
+## Features
+
+- 🛍️ Product browsing and details
+- 🛒 Shopping cart functionality
+- 🔐 Mock authentication
+- 📱 Responsive design
+- 🎨 Modern UI with Tailwind CSS
+- ⚡ Fast and optimized with Next.js
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **State Management**: Zustand
+- **Icons**: Lucide React
+- **Form Handling**: @tailwindcss/forms
+- **Image Handling**: @tailwindcss/aspect-ratio
+
+## Project Structure
+
+```
+apps/web/
+├── app/                    # Next.js app directory
+│   ├── auth/              # Authentication page
+│   ├── cart/              # Shopping cart page
+│   ├── products/          # Product detail pages
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+├── components/            # Reusable components
+│   ├── Navbar.tsx        # Navigation bar
+│   └── ProductCard.tsx   # Product card component
+├── db/                    # Mock data
+│   └── products.ts       # Product data
+├── store/                # State management
+│   ├── auth.ts          # Authentication store
+│   └── cart.ts          # Shopping cart store
+└── types/               # TypeScript types
+    └── index.ts         # Type definitions
+```
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   pnpm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Run the development server:
+   ```bash
+   pnpm dev
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features in Detail
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load Inter, a custom Google Font.
+### Product Browsing
+- View all products on the home page
+- Responsive grid layout
+- Product cards with images and details
 
-## Learn More
+### Product Details
+- Detailed product information
+- Add to cart functionality
+- Responsive image display
 
-To learn more about Next.js, take a look at the following resources:
+### Shopping Cart
+- Add/remove items
+- Update quantities
+- Calculate total price
+- Persistent cart state
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Authentication
+- Mock sign-in functionality
+- User state management
+- Protected routes (to be implemented)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
